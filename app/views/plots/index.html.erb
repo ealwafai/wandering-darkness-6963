@@ -4,7 +4,7 @@
     <h2><%= plot.number%></h2>
       <%plot.plants.each do |plant|%>
       <section id="plant-<%=plant.id%>">
-        <%=plant.name%>
+        <%=plant.name%> <%= button_to "Remove", crop_path(plot, plant), params: {plot_id: plot.id, plant_id: plant.id}, method: :delete %>
       </section>
       <%end%>
     </section>
