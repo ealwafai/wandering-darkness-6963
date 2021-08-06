@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Plots Index' do
   before :each do
-    @garden = Garden.create!(name: "Community Garden", organic: true)
+    @garden = Garden.create!(name: "Savage Garden", organic: true)
 
     @plot_1 = Plot.create!(number: 1, size: "Large", direction: "East", garden: @garden)
     @plot_2 = Plot.create!(number: 2, size: "small", direction: "West", garden: @garden)
